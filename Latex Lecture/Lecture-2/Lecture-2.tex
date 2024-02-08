@@ -1,0 +1,43 @@
+\documentclass[14pt]{article}
+\title{Lecture-2}
+\author{Iffat Bin Hossain}
+\date{\today}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\pagebreak
+\section{Inserting images into \LaTeX}
+\includegraphics[scale=0.2]{colorful-spectrum-trees-desktop-pt05b55kqcaeza6c.jpg}
+\section{Adjust with Text}
+\includegraphics[width=\textwidth]{colorful-spectrum-trees-desktop-pt05b55kqcaeza6c.jpg}
+\section{Rotating the image}
+\includegraphics[width=\textwidth,angle=45]{colorful-spectrum-trees-desktop-pt05b55kqcaeza6c.jpg}
+\pagebreak
+\section{Insert Again}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{colorful-spectrum-trees-desktop-pt05b55kqcaeza6c.jpg}
+    \caption{colorful Image}
+    \label{Colorful Image}
+\end{figure}
+\section{Two image aside}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[scale=0.1]{colorful-spectrum-trees-desktop-pt05b55kqcaeza6c.jpg} & \includegraphics[scale=0.2]{Screenshot 2024-01-29 114114.png} \\
+         Colorful Image & Screenshot
+    \end{tabular}
+\end{table}
+\section{See Image}
+See figure \ref{Colorful Image}
+\section{Bibliography management with BibTeX}
+Compiler is the greatest invention of mankind \cite{dragonbook}\\
+MIPS IS HARD \cite{mips}\\
+Arjun is the son of Indra\cite{kumar2006actions}
+
+\bibliographystyle{abbrv}
+\bibliography{ref}
+
+\end{document}

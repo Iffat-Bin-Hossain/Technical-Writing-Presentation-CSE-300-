@@ -1,0 +1,181 @@
+\documentclass[14pt]{article}
+\title{Introduction to Latex}
+\author{Iffat Bin Hossain}
+\date{}
+\date{\today}
+\date{January 31,2024}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \pagebreak
+    \section{Introduction}
+    This is the introduction of the document.
+    \subsection{Latex Introduction}
+    Hello,Latex
+    \subsubsection{What is Latex}
+    A formatting language
+    \subsubsection{Review}
+    Very good tool
+    \subsection{Overleaf Introduction}
+    Hello,Overleaf
+    \section{Description}
+    This is the Description of the document
+    \section*{An Unlisted Section}
+    This is an unlisted section that does not showed in table of content.
+    \section{Text Formatting}
+    \textbf{This portion will be bold}\\
+    \textit{This portion will be \emph{emphasized} italic}\\
+    \emph{This portion will be emphasized}\\
+    \underline{This portion will be underlined}\\
+    \large{Large Text}\\
+    {\huge Huge Text}\\
+    \pagebreak
+    \section{List}
+    Two types of list.Ordered and Unordered list
+    \subsection{Ordered List}
+    \begin{enumerate}
+    \item Vegetable
+    \begin{enumerate}
+        \item Carrot
+        \item Ladies Finger
+        \item Cucumber
+    \end{enumerate}
+    \item Corn
+    \begin{itemize}
+        \item Rice
+        \item Lentil
+        \item Wheat
+    \end{itemize}
+    \item Meat-fish
+    \end{enumerate}
+    \subsection{Unordered List}
+    \begin{itemize}
+    \item Vegetable
+    \begin{itemize}
+        \item Carrot
+        \item Ladies Finger
+        \item Cucumber
+    \end{itemize}
+    \item Corn
+    \begin{itemize}
+        \item Rice
+        \item Lentil
+        \item Wheat
+    \end{itemize}
+    \item Meat-fish
+    \end{itemize}
+    \pagebreak
+\section{Descriptive List} 
+\begin{description}
+\item[Point 1] Flash Mob
+\item[Point 2] Color Fest
+\item[Point 3] Band Party
+\end{description}
+\section{Basic Tables}
+\begin{tabular}{|c c c|}
+a & b & c \\
+d & e & f \\
+g & h & i 
+\end{tabular}
+\begin{tabular}{|c|c|c|}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 
+\end{tabular}
+\begin{tabular}{|c c c|}
+\hline
+a & b & c \\
+d & e & f \\
+g & h & i \\
+\hline
+\end{tabular}
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\hline
+\end{tabular}
+\begin{tabular}{|c| c| c|}
+\hline
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+d & e & f \\
+\hline
+g & h & i \\
+\hline
+\end{tabular}
+\section{Customized Table}
+\subsection{Multi Column Table}
+\begin{tabular}{|c|c c|}
+\hline
+1 & 2 & 3 \\
+\cline{1-1}
+4 & \multicolumn{2}{c|}{6} \\
+\cline{2-3}
+7 & 8 & 9 \\
+\hline
+\end{tabular}
+\subsection{Multi Row Table}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Name & Roll & CGPA\\
+\cline{1-3}
+Iffat & 3 & \multirow{2}{*}{5.00}\\
+\cline{1-2}
+Sadi & 1 & \\
+\cline{1-2}
+Ayon & 2 & \\
+\hline
+\end{tabular}
+\subsection{Hybrid Table}
+\subsubsection{Example 1}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+
+\multirow{4}{*}{Student's Info} & \multirow{2}{*}{Name}& \multirow{2}{*}{Roll} & \multirow{2}{*}{Date of Birth} & \multicolumn{2}{c|}{Marks}\\
+\cline{5-6}
+ & & & & CT-1 & CT-2 \\
+\cline{2-6}
+ & Nabil & 3 & \multirow{2}{*}{August 25,2002} & 10 & 12\\
+\cline{2-3}
+\cline{5-6}
+ & Iffat & 5 &  & 8 & 5\\
+\cline{2-6}
+ & Ayon & 2 & 14 February,2002 & 18 & 16\\
+\hline
+\end{tabular}
+\subsubsection{Example 2}
+\begin{tabular}{|c|c|c| c|}
+\hline
+1 & 2 & 3 & 4 \\
+\cline{1-3}
+5 & 6 & 7 & 8 \\
+\hline
+\multicolumn{3}{|c|}{Merged} & 9\\
+\hline
+\multicolumn{3}{|c|}{\multirow{2}{*}{Text}} & 8\\
+\multicolumn{3}{|c|}{} & 7\\
+\hline
+\end{tabular}
+\section{Math Environment}
+
+This is a simple equation $a+a=2a$
+This is a formula $a^2+2ab+b^2=(a+b)^2$
+$a_{123}+b_1+c_1=4$
+$E_{Subscript}=mc^{Superscript}$
+Equation $\sum_{i=0}^na_i$
+$$E=mc^2$$
+\begin{equation}
+E=mc^2
+\end{equation}
+\begin{equation}
+E=e^\frac{a^b}{s_i}
+\end{equation}
+$<$$\gamma$$\cap$
+$\left(\frac{\frac{a}{b}}{\frac{c}{d}}\right)$
+\end{document}
