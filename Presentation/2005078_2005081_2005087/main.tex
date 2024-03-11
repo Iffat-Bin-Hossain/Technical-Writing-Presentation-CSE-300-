@@ -31,10 +31,8 @@
 \frametitle{Table of Contents}
 \tableofcontents
 \end{frame}
-
-% Nayem's Part started
-
-\begin{frame}{Introduction}
+\begin{frame}
+\frametitle{Introduction}
 \section{Introduction}
 \newtheorem{What is TSP?}{What is TSP?}
 \begin{What is TSP?}
@@ -259,12 +257,13 @@ There are several algorithm to solve \textbf{Travelling Salesman Problem}.\\
     \item TSP with Genetic Algorithm
 \end{itemize}    
 \end{frame}
-
-% Nayem's Part ended
-
-% Jayed's Part started
-
 \subsection{TSP with Dynamic Programming(using Bitmask)}
+
+
+
+
+
+
 \begin{frame}{TSP with Dynamic Programming(using Bitmask)}
 Let us consider a graph with source S containg n nodes\\
    \centering
@@ -415,10 +414,40 @@ $O(n^2 \cdot 2^n)$ where $O(n \cdot 2^n)$ are maximum number of unique subproble
 \end{Time Complexity}
 \end{frame}
 
-% Jayed's Part ended
 
 
-% Iffat's Part started
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{TSP with Approximation Algorithm}
 \begin{frame}{TSP with Approximation Algorithm}
@@ -608,6 +637,16 @@ Now Perform DFS traversal on generated MST
 \end{tikzpicture}
 \end{DFS traversal}
 \end{frame}
+
+
+
+
+
+
+
+
+
+
 \begin{frame}{TSP with Approximation Algorithm}
 MST under
 \newtheorem{DFS traversal}{DFS traversal}
@@ -700,6 +739,9 @@ $Cost_{\text{MST}} = Weight_{AB} + Weight_{BC} + Weight_{CD}$\\
 Overall time complexity is dominated by the MST construction step, which is typically O(E log V) 
 \end{Time Complexity}
 \end{frame}
+
+
+
 \section{Comparison between Exact and Approximate Solution}
 \begin{frame}{Comparison between Exact and Approximate Solution}
     \newtheorem{Exact solution from DP}{Exact solution from DP}
@@ -712,14 +754,10 @@ Overall time complexity is dominated by the MST construction step, which is typi
     \end{Approximate solution from AA}
     \newtheorem{Ratio of two Sol^n}{Ratio  of two Sol^n}
     \begin{Ratio of two Sol^n}
+    
     $Ratio=\frac{Result_{AA}}{Result_{DP}}=2$
     \end{Ratio of two Sol^n}
 \end{frame}
-
-% Iffat's Part ended
-
-
-
 \bibliographystyle{plain}
 \bibliography{ref}
 \section{The End}
